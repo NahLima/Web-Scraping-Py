@@ -2,6 +2,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import re  # biblioteca re que serve para trabalhar com expressões regulares e tratar as strings obtidas
 
+
 url = urlopen("https://www.imdb.com/chart/top?ref_=nv_mv_250")
 
 html = BeautifulSoup(url.read(),"html.parser")

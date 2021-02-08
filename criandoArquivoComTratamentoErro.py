@@ -19,6 +19,7 @@ else:
     html = BeautifulSoup(url.read(),"html.parser")
     contentTitleYear = html.find_all("td", {"class": "titleColumn"})
     contentRating = html.find_all("td", {"class": "imdbRating"})
+    
   
     with open(csvFileName, 'w') as csvfile:
         fileWriter = csv.writer(csvfile, delimiter=';', quoting=csv.QUOTE_MINIMAL)
